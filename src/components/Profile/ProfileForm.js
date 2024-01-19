@@ -24,6 +24,7 @@ const ProfileForm = () => {
         }
       }).then(res => {
         history.replace('/');
+        authctx.logout()
       })
   }
   return (
